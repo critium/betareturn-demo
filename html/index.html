@@ -46,7 +46,7 @@
     /* Downsize the brand/project name a bit */
     .navbar .brand {
       padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
+      font-size: 30px;
       font-weight: bold;
       text-shadow: 0 -1px 0 rgba(0,0,0,.5);
     }
@@ -269,155 +269,137 @@
     <!-- NAVBAR
     ================================================== -->
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
-    <div class="container navbar-wrapper">
 
-      <div class="navbar navbar-inverse">
-        <div class="navbar-inner">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
           <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+          <div class="right-align">
+            <button class="btn btn-large btn-primary" type="button">Log in</button>
+            <button class="btn btn-large btn-inverse" type="button">Sign up</button>
+          </div>
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">BetaReturn</a>
+          <a class="brand" href="./index.html">βεταReturn</a>
           <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav right-align">
+              <li><a href="#what">What is BetaReturn</a></li>
+              <li><a href="#how">How It Works</a></li>
+              <li><a href="#about">Company</a></li>
             </ul>
           </div><!--/.nav-collapse -->
-          <div class="right-align">
-            <form class="form-inline">
-              <input type="text" class="input-small" placeholder="Email">
-              <input type="password" class="input-small" placeholder="Password">
-              <label class="checkbox">
-                <input type="checkbox"> Remember me
-              </label>
-              <a href="./dashboard.html">Sign in</a>
-            </form>
-          </div>
-        </div><!-- /.navbar-inner -->
-      </div><!-- /.navbar -->
-
-    </div><!-- /.container -->
-
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="../assets/img/slide-01.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="../assets/img/flight.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="../assets/img/rocket.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
-
+        </div><!-- /container -->
+      </div><!-- /.navbar-inner -->
+    </div><!-- /.navbar -->
 
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+    <br><br><br><br><br><br>
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span4">
-          <img class="img-circle" src="http://placehold.it/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="http://placehold.it/140x140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="http://placehold.it/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <!-- START THE FEATURETTES -->
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span12">
+          <center>
+            <svg style="overflow: hidden; position: relative;" height="350" version="1.1" width="350" xmlns="http://www.w3.org/2000/svg">
+              <path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill="#333333" stroke="#333333" d="M16,1.466C7.973,1.466,1.466,7.973,1.466,16c0,8.027,6.507,14.534,14.534,14.534c8.027,0,14.534-6.507,14.534-14.534C30.534,7.973,24.027,1.466,16,1.466z M14.757,8h2.42v2.574h-2.42V8z M18.762,23.622H16.1c-1.034,0-1.475-0.44-1.475-1.496v-6.865c0-0.33-0.176-0.484-0.484-0.484h-0.88V12.4h2.662c1.035,0,1.474,0.462,1.474,1.496v6.887c0,0.309,0.176,0.484,0.484,0.484h0.88V23.622z" stroke-width="0" transform="matrix(10,0,0,10,10,10)" fill-opacity="1">
+              </path>
+            </svg>
+            <h3 class="featurette-heading"> It’s easy to understand<br>
+              <span class="muted">what’s going on with your money.</span>
+            </h3>
+            <p class="lead">Get a handle on your finances the free and fast way. Mint does all the work of organizing and categorizing
+            your spending for you. See where every dime goes and make money decisions you feel good about. </p>
+            <button class="btn btn-large btn-primary" type="button">Get Started &gt;</button>
+          </center>
+        </div>
       </div>
+    </div>
 
-      <hr class="featurette-divider">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span4">
+          <svg style="overflow: hidden; position: relative;" height="350" version="1.1" width="350" xmlns="http://www.w3.org/2000/svg">
+            <path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill="#333333" stroke="#333333" d="M24.875,15.334C24.875,15.334,24.875,10.457999999999998,24.875,10.457999999999998C24.875,5.563999999999998,20.894,1.5829999999999984,16,1.5829999999999984C11.106000000000002,1.5829999999999984,7.125,5.563999999999998,7.125,10.457999999999998C7.125,10.457999999999998,7.125,15.334,7.125,15.334C7.125,15.334,5.042,15.334,5.042,15.334C5.042,15.334,5.042,30.417,5.042,30.417C5.042,30.417,26.958,30.417,26.958,30.417C26.958,30.417,26.958,15.334,26.958,15.334C26.958,15.334,24.875,15.334,24.875,15.334C24.875,15.334,24.875,15.334,24.875,15.334M10.625,10.458C10.625,7.494,13.036,5.083,16,5.083C18.964,5.083,21.375,7.494,21.375,10.458C21.375,10.458,21.375,15.334,21.375,15.334C21.375,15.334,10.625,15.334,10.625,15.334C10.625,15.334,10.625,10.458,10.625,10.458C10.625,10.458,10.625,10.458,10.625,10.458M18.272,26.956C18.272,26.956,13.726999999999999,26.956,13.726999999999999,26.956C13.726999999999999,26.956,14.948999999999998,23.289,14.948999999999998,23.289C14.166999999999998,22.900000000000002,13.624999999999998,22.101000000000003,13.624999999999998,21.17C13.624999999999998,19.858,14.687999999999999,18.795,15.999999999999998,18.795C17.311999999999998,18.795,18.375,19.857000000000003,18.375,21.17C18.375,22.102,17.833,22.900000000000002,17.051,23.289C17.051,23.289,18.272,26.956,18.272,26.956C18.272,26.956,18.272,26.956,18.272,26.956" stroke-width="0" transform="matrix(10,0,0,10,10,10)" fill-opacity="1">
+            </path>
+          </svg>
+        </div>
+        <div class="span8">
+          <center>
+            <div class="featurette">
+              <h2 class="featurette-heading">Quick and secure sign up.<br>
+                <span class="muted">Create a Mint account in seconds.</span>
+              </h2>
+              <p class="lead">
+              Securely connect your accounts in just minutes.
+              See everything in one place with one password.
+              Mint only “reads” your information.
+              No one can move your money in Mint–not even you.
 
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              Learn more about security.</p>
+            </div>
+          </center>
+        </div>
       </div>
+    </div>
 
-      <hr class="featurette-divider">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span8">
+          <center>
+            <div class="featurette">
+              <h2 class="featurette-heading">See what’s what.</h2>
+              <p class="lead">
+              Mint automatically organizes your spending into categories—
+              like rent, gas, clothes, lattes—and shows you where your
+              money goes in easy-to-understand charts.
 
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              Learn more about auto categorization.</p>
+            </div>
+          </center>
+        </div>
+        <div class="span4">
+          <svg style="overflow: hidden; position: relative;" height="350" version="1.1" width="350" xmlns="http://www.w3.org/2000/svg">
+            <path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill="#333333" stroke="#333333" d="M16.604,1.914c0-0.575-0.466-1.041-1.041-1.041s-1.041,0.466-1.041,1.041v1.04h2.082V1.914zM16.604,22.717h-2.082v3.207c0,0.574-4.225,4.031-4.225,4.031l2.468-0.003l2.807-2.673l3.013,2.693l2.272-0.039l-4.254-4.011V22.717L16.604,22.717zM28.566,7.113c0.86,0,1.56-0.698,1.56-1.56c0-0.861-0.698-1.56-1.56-1.56H2.561c-0.861,0-1.56,0.699-1.56,1.56c0,0.862,0.699,1.56,1.56,1.56h1.583v12.505l-0.932-0.022c-0.861,0-1.213,0.467-1.213,1.04c0,0.576,0.352,1.041,1.213,1.041h24.597c0.86,0,1.299-0.465,1.299-1.041c0-1.094-1.299-1.04-1.299-1.04l-0.804,0.109V7.113H28.566zM11.435,17.516c-3.771,0-4.194-4.191-4.194-4.191c0-4.096,4.162-4.161,4.162-4.161v4.161h4.193C15.596,17.516,11.435,17.516,11.435,17.516zM18.716,13.388h-1.071v-1.073h1.071V13.388zM18.716,10.267h-1.071V9.194h1.071V10.267zM23.314,13.388H20.26c-0.296,0-0.535-0.24-0.535-0.536c0-0.297,0.239-0.537,0.535-0.537h3.057c0.297,0,0.535,0.24,0.535,0.537C23.852,13.147,23.611,13.388,23.314,13.388zM23.314,10.267H20.26c-0.296,0-0.535-0.239-0.535-0.535c0-0.297,0.239-0.537,0.535-0.537h3.057c0.297,0,0.535,0.24,0.535,0.537C23.852,10.027,23.611,10.267,23.314,10.267z" stroke-width="0" transform="matrix(10,0,0,10,10,10)" fill-opacity="1">
+            </path>
+          </svg>
+        </div>
       </div>
+    </div>
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span4">
+          <svg style="overflow: hidden; position: relative;" height="350" version="1.1" width="350" xmlns="http://www.w3.org/2000/svg">
+            <path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;" fill="#333333" stroke="#333333" d="M29.548,3.043c-1.081-0.859-2.651-0.679-3.513,0.401L16,16.066l-3.508-4.414c-0.859-1.081-2.431-1.26-3.513-0.401c-1.081,0.859-1.261,2.432-0.401,3.513l5.465,6.875c0.474,0.598,1.195,0.944,1.957,0.944c0.762,0,1.482-0.349,1.957-0.944L29.949,6.556C30.809,5.475,30.629,3.902,29.548,3.043zM24.5,24.5h-17v-17h12.756l2.385-3H6C5.171,4.5,4.5,5.171,4.5,6v20c0,0.828,0.671,1.5,1.5,1.5h20c0.828,0,1.5-0.672,1.5-1.5V12.851l-3,3.773V24.5z" stroke-width="0" transform="matrix(10,0,0,10,10,10)" fill-opacity="1">
+            </path>
+          </svg>
+        </div>
+        <div class="span8">
+          <center>
+            <div class="featurette">
+              <h2 class="featurette-heading">Choose your goals. </h2>
+              <p class="lead">
+              Just click on what you want to accomplish with your money. Mint
+              gives you the simple steps for getting there, along with free advice,
+              gentle reminders, and encouragement.
 
-      <hr class="featurette-divider">
+              Learn more about creating goals.</p>
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+    <!-- /END THE FEATURETTES -->
 
-      <!-- /END THE FEATURETTES -->
 
-
+    <div class="container">
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -444,13 +426,6 @@
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
-    <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
     </script>
   </body>
 </html>
